@@ -1,0 +1,58 @@
+CREATING A GIT
+
+| Task                     | Command                            |
+| ------------------------ | ---------------------------------- |
+| Start Git in your folder | `git init`                         |
+| Connect to GitHub repo   | `git remote add origin <repo-url>` |
+| Rename branch to main    | `git branch -M main`               |
+
+
+CHECKING STATUS OF GIT and STAGING/COMMITING TO LOCAL
+
+| Task                      | Command                        |
+| ------------------------- | ------------------------------ |
+| Check current file status | `git status`                   |
+| Stage all changes         | `git add .`                    |
+| Stage specific file(s)    | `git add filename1 filename2`  |
+| Commit staged changes     | `git commit -m "Your message"` |
+
+COMMITING ONLINE
+
+| Task                | Command                 |
+| ------------------- | ----------------------- |
+| Push code to GitHub | `git push origin main`  |
+| Push tags to GitHub | `git push origin <tag>` |
+git tag v1.0.0
+git push origin v1.0.0
+
+VIEW HISTORY
+
+| Task                 | Command                |
+| -------------------- | ---------------------- |
+| View commits (short) | `git log --oneline`    |
+| View commits (full)  | `git log`              |
+| View commit details  | `git show <commit-id>` |
+
+WORK WITH OLDER VERSIONS
+
+| Task                                         | Command                                     |
+| -------------------------------------------- | ------------------------------------------- |
+| Go to old version temporarily                | `git checkout <commit-id>`                  |
+| Return to latest (main)                      | `git checkout main`                         |
+| Create branch from old commit                | `git checkout -b <branch-name> <commit-id>` |
+| Reset to old version permanently (dangerous) | `git reset --hard <commit-id>`              |
+
+BRANCHING
+
+| Task                          | Command                         |
+| ----------------------------- | ------------------------------- |
+| Create new branch             | `git branch <branch-name>`      |
+| Switch to branch              | `git checkout <branch-name>`    |
+| Create + switch to new branch | `git checkout -b <branch-name>` |
+| Merge a branch into current   | `git merge <branch-name>`       |
+| Delete branch                 | `git branch -d <branch-name>`   |
+  checking branches                git branch
+  create a new branch              git checkout -b <name>
+
+
+

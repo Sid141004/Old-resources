@@ -1,0 +1,99 @@
+python :- 
+
+	stack = deque()
+	stack.append()
+	stack.pop()
+	//peek in stack is stack[-1]
+	stack.popleft()//for queue
+	
+
+	first = float('inf')
+
+	//use sorted for anything other than lists. also original is not modified here. returns a list
+	nums = sorted(numbers, reverse=True)#decending order
+
+	Counter(word) // counts the number of occurances in string/ list . returns a dictionary ( use dict keywords .values , .keys , .items)
+
+	//get Ith column 
+	column = [row[i] for row in grid]
+
+
+	// while - else / for - else loops . study
+
+	for i, s in enumerate(senate) . i is index . senate is string in this case 
+
+	for _ in range(len(q)):
+
+	//while BFS, the nodes currently in the queue in one iteration before adding neigbhours are in the same level
+
+	memo = [[0]*(r+1) for _ in range(l+1)]
+
+	arr.sort(key=lambda x: x[0]) // here lamda func takes x from the list and return x[0]
+
+	res[::-1] // for reversing an array or res.reverse() for in place reversal
+	
+	any(x==1 for x in arr)
+
+	bisect_left(potions,target)
+
+	median(sorted(nums1 + nums2))
+
+	arr1 += [0]*(n-m) # u can add 0s to an pre existing array like this
+	
+	arr.index(val)
+
+	
+
+
+HASHMAPS :- 
+	hash = defaultdict(list)
+	hash = {}
+	hash[list].append(ele)
+	hash.keys()
+	hash.values()
+	for k, v in map.items():
+	hash.get()
+	if ele in hash
+	hash.items()
+	
+	del thisdict["model"]
+
+HASHSET :- 
+	hash = set()
+	hash.add()
+
+HEAPS :-
+	#minheap
+	heapq.heapify(arr)
+	heapq.heappush(arr, ele)
+	heap1.heappop(arr)
+	heapq.heappushpop(arr,ele)
+	#maxheap
+	new_arr = [-n for n in nums]
+	heapq.heappush(arr,-ele)
+	- heapq.heapop(arr)
+
+Bit Manipulation :-
+	bin(i)[2:] #gives binary rep
+	int(binary,2)#2 is the base 
+	(a & 1) #return 1 if odd and 0 if even
+	(a>>1)#does arithmetic right shift . every right shift divides original number by 2
+	a & (a-1) # checks if it is power of 2 or not . 0 if its a power , !=0 is its not a power. doesn't work for 0
+	x = x ^ 10 ^ 5 # this toggles between 5 and 10 . as whatever value x takes that cancels with the corresponding same val
+	# xor of two same numbers is 0
+	x & (1<<k) checks if the kth bit is set. ^ toggles. | sets the bit . &~ unsets the bit
+	1-bit gives the opposite bit
+	num.bit_length()
+
+
+to do :- 
+	merge sort
+	kmp algo 
+	rabin korp implementation
+	greedy problems
+	bellman ford algo, kusaraju's algo, Floyd warshall algo in graphs
+	binary search questions
+	
+	
+	
+	
